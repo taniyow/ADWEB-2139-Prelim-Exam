@@ -1,0 +1,113 @@
+<!-- HOME SECTION -->
+<div class="border-bottom" id="home">
+  <!-- HERO -->
+  <div class="container py-1">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img [src]="hero" class="d-block mx-lg-auto img-fluid" alt="Hero Image" width="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 [class]="branding">{{brand}}</h1>
+        <p [class]="heroSubheading">Join our online events this 2022!</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
+          <a href="#join" class="btn btn-outline-dark">Early Bird Registration</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ABOUT SECTION -->
+<!-- CARD HEADING -->
+<div class="py-5 text-center" id="about">
+  <div class="container">
+    <h2>Join our {{brand}} around the Globe!</h2>
+  </div>
+</div>
+<!-- CARDS -->
+<div class="container" [style]="cards">
+  <div class="row align-items-start">
+    <div class="col">
+      <div class="card" [style]="cardStyling">
+        <img [src]="imgFrance" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">France</h5>
+          <p class="card-text">
+            The largest country in Western Europe,
+            has long been a gateway between the
+            continent's northern and southern regions.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Architechture and Fine Arts</li>
+          <li class="list-group-item">Cultural Events</li>
+          <li class="list-group-item">Safety and Security</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link" [style.text-decoration]="linkStyle">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" [style]="cardStyling">
+        <img [src]="imgSeoul" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Seoul</h5>
+          <p class="card-text">
+            Korean Sôul, formally Sôul-t'ûkpyôlsi 
+            ("Special City of Seoul"), city and capital
+            of South Korea (the Republic of Korea).
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Humanities</li>
+          <li class="list-group-item">Cultural Events</li>
+          <li class="list-group-item">Safety and Security</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link" [style.text-decoration]="linkStyle">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" [style]="cardStyling">
+        <img [src]="imgSanfrancisco" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">San Francisco</h5>
+          <p class="card-text">
+            It is a cultural and financial centre of 
+            the western United States and one of the 
+            country's most cosmopolitan cities.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Science and Technology</li>
+          <li class="list-group-item">Cultural Events</li>
+          <li class="list-group-item">Safety and Security</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link" [style.text-decoration]="linkStyle">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" [style]="cardStyling">
+        <img [src]="imgBoston" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Boston</h5>
+          <p class="card-text">
+            Best known for its famous baked beans, Fenway Park, 
+            The Boston Marathon, and of course for the bar from Cheers.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link" [style.text-decoration]="linkStyle">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
